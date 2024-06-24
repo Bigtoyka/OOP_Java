@@ -33,7 +33,7 @@ public class Main_hw {
                     }
 
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(1000); // сделано для того, чтобы отситывать 1 сек.
                     } catch (InterruptedException e) {
                     }
                 }
