@@ -1,23 +1,18 @@
 package test;
 
 import example.MyArrayList;
+import example.Person;
+
+import java.util.Random;
 
 public class Main {
-
     public static void main(String[] args) {
-        MyArrayList employees = getEmployees();
-        employees.add("James");
-        for(int i =0; i < employees.getSize(); i++){
-            System.out.println(employees.get(i));
+        Random random = new Random();
+        for (int i = 0; i < 100; i ++) {
+            int number = random.nextInt(1,7);
+            String res = String.format("Ваше число: %s ", number);
+            System.out.print(res);
         }
     }
-    private static MyArrayList getEmployees(){
-        MyArrayList employees = new MyArrayList();
-        employees.add("John");
-        employees.add("Olivia");
-        employees.add("Emma");
-        employees.add("Max");
-        employees.add("Nick");
-        return employees;
-    }
 }
+
